@@ -1,12 +1,15 @@
 System.config({
-  "baseURL": "base",
+  "baseURL": "src",
   "defaultJSExtensions": true,
   "transpiler": "typescript",
   "typescriptOptions": {
     "noImplicitAny": false
   },
   "paths": {
-    "github:*": "jspm_packages/github/*"
+    "github:*": "../jspm_packages/github/*",
+    'systemjs': '../jspm_packages/system.js',
+    "system-polyfills": "../jspm_packages/system-polyfills.js",
+    "es6-module-loader": "../node_modules/es6-module-loader/dist/es6-module-loader.js"
   }
 });
 

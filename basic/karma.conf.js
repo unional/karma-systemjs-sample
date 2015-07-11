@@ -5,33 +5,46 @@ module.exports = function (config) {
     config.set({
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
-        basePath: '.',
-
+        basePath: '',
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['mocha', 'jspm', 'sinon-chai'],
+        frameworks: ['mocha', 'systemjs', 'sinon-chai'],
 
 
         plugins: [
             'karma-mocha',
             'karma-chrome-launcher',
-            'karma-jspm',
+            'karma-systemjs',
             'karma-sinon-chai'
         ],
 
         // list of files / patterns to load in the browser
-        //files: [
-        //    {pattern: "test/*", included: false},
-        //    {pattern: "test/**/*", included: false},
-        //    {pattern: "src/**/*", included: false}
-        //],
-
-        jspm: {
-            loadFiles: ['test/*'],
-            serveFiles: ['src/*']
+        files: [
+            //{pattern: "test/*", included: false}
+        ],
+        systemjs: {
+            //baseURL: "./src/",
+            configFile: "config.js",
+            config: {
+                transpiler: null
+            },
+            files: [
+                "src/*",
+                "test/*"
+            ],
+            testFileSuffix: ".unit.js"
         },
-
+        //
+        //jspm: {
+        //    loadFiles: ['test/*'],
+        //    serveFiles: ['src/*']
+        //},
+        //proxies: {
+        //    '/src/test/': '/test/',
+        //    //'/test/': '/base/test/',
+        //    '/jspm_packages/': '/base/jspm_packages/'
+        //},
 
         // list of files to exclude
         exclude: [],
