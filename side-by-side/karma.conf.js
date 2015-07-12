@@ -24,10 +24,14 @@ module.exports = function (config) {
             //{pattern: "test/*", included: false}
         ],
         systemjs: {
-            //baseURL: "./src/",
             configFile: "config.js",
             config: {
-                transpiler: null
+                transpiler: null,
+                paths: {
+                    'systemjs': '../jspm_packages/system.js',
+                    "system-polyfills": "../jspm_packages/system-polyfills.js",
+                    "es6-module-loader": "../node_modules/es6-module-loader/dist/es6-module-loader.js"
+                }
             },
             files: [
                 "src/*",
@@ -35,16 +39,6 @@ module.exports = function (config) {
             ],
             testFileSuffix: ".unit.js"
         },
-        //
-        //jspm: {
-        //    loadFiles: ['test/*'],
-        //    serveFiles: ['src/*']
-        //},
-        //proxies: {
-        //    '/src/test/': '/test/',
-        //    //'/test/': '/base/test/',
-        //    '/jspm_packages/': '/base/jspm_packages/'
-        //},
 
         // list of files to exclude
         exclude: [],
