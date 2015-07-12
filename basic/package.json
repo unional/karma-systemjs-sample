@@ -1,12 +1,12 @@
 {
-  "name": "testjspm",
+  "name": "karma-systemjs-sample-side-by-side",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample with src and test next to each other",
   "main": "",
   "scripts": {
     "test": "karma start"
   },
-  "author": "",
+  "author": "unional",
   "license": "MIT",
   "devDependencies": {
     "es6-module-loader": "^0.17.3",
@@ -14,7 +14,6 @@
     "karma": "^0.12.37",
     "karma-chai-plugins": "^0.6.0",
     "karma-chrome-launcher": "^0.2.0",
-    "karma-jspm": "^2.0.0-beta.1",
     "karma-mocha": "^0.2.0",
     "karma-sinon-chai": "^1.0.0",
     "karma-systemjs": "^0.7.0",
