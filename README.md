@@ -1,8 +1,8 @@
-# Karma-jspm-sample
-This is a sample project for [karma-jspm](https://github.com/Workiva/karma-jspm)
+# Karma-systemjs-sample
+This is a sample project for [karma-systemjs](https://github.com/rolaveric/karma-systemjs)
 
-# What you need (for each sample, using *basic* as an example)
-	cd basic
+# What you need (for each sample, using *side-by-side* as an example)
+	cd side-by-side
 	npm -g i jspm@beta
 	npm -g i karma-cli
 	npm install
@@ -11,3 +11,4 @@ This is a sample project for [karma-jspm](https://github.com/Workiva/karma-jspm)
 
 # Using
 * jspm: **0.16.0-beta.3**
+* karma-systemjs: **0.7.0** with **fix-relative-baseURL** and **override-baseURL** PR.
