@@ -1,10 +1,12 @@
 # Karma-systemjs-sample
 This is a sample project for [karma-systemjs](https://github.com/rolaveric/karma-systemjs)
 
-# What you need (for each sample, using *side-by-side* as an example)
-	cd side-by-side
+# Do this if you have not already
 	npm -g i jspm@beta
 	npm -g i karma-cli
+
+# What you need (using *side-by-side* as an example)
+	cd side-by-side
 	npm install
 	jspm install
 	karma start
