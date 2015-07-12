@@ -14,3 +14,6 @@ This is a sample project for [karma-systemjs](https://github.com/rolaveric/karma
 # Using
 * jspm: **0.16.0-beta.3**
 * karma-systemjs: **0.7.0** with **fix-relative-baseURL** and **override-baseURL** PR.
+
+You can get the PRs here:
+https://github.com/rolaveric/karma-systemjs
