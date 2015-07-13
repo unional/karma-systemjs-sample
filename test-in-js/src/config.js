@@ -2,6 +2,13 @@ System.config({
   "baseURL": "js",
   "defaultJSExtensions": true,
   "paths": {
-    "github:*": "jspm_packages/github/*"
+    "github:*": "js/jsmp_packages/github/*",
+    "npm:*": "js/jsmp_packages/npm/*"
   }
 });
+
+System.config({
+  "map": {
+  }
+});
+

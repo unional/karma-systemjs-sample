@@ -6,7 +6,7 @@ System.config({
     "noImplicitAny": false
   },
   "paths": {
-    "github:*": "../jspm_packages/github/*"
+    "github:*": "jspm_packages/github/*"
   }
 });
 

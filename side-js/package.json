@@ -22,13 +22,7 @@
   "jspm": {
     "directories": {
       "baseURL": "src",
-      "packages": "src/js/jsmp_packages"
-    },
-    "dependencies": {
-      "ts": "github:frankwallis/plugin-typescript@^2.0.1"
-    },
-    "devDependencies": {
-      "typescript": "github:mhegazy/typescript@v1.5-beta2"
+      "packages": "src/js/jspm_packages"
     }
   }
 }
