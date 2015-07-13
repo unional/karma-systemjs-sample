@@ -1,0 +1,34 @@
+{
+  "name": "karma-systemjs-sample-side-js",
+  "version": "1.0.0",
+  "description": "Files under src/js and test",
+  "main": "",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "unional",
+  "license": "MIT",
+  "devDependencies": {
+    "es6-module-loader": "^0.17.3",
+    "jspm": "^0.16.0-beta.3",
+    "karma": "^0.12.37",
+    "karma-chai-plugins": "^0.6.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-mocha": "^0.2.0",
+    "karma-sinon-chai": "^1.0.0",
+    "karma-systemjs": "^0.7.0",
+    "mocha": "^2.2.5"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src",
+      "packages": "src/js/jspm_packages"
+    },
+    "dependencies": {
+      "ts": "github:frankwallis/plugin-typescript@^2.0.1"
+    },
+    "devDependencies": {
+      "typescript": "github:mhegazy/typescript@v1.5-beta2"
+    }
+  }
+}
